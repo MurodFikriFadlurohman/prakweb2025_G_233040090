@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil Pengguna</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pengguna</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="container">
-    <h1>Detail Profil Pengguna</h1>
-    <div class="profile-card">
-      <h1>Selamat datang, <?= htmlspecialchars($user['name']) ?></h1>
-      <p>Email: <?= htmlspecialchars($user['email']) ?></p>
-      <a href="index.php" class="btn">Kembali ke daftar</a>
+    <div class="container">
+        <!-- Menampilkan nama pengguna dengan sanitasi HTML -->
+        <h1>Selamat Datang, <?= htmlspecialchars($user['name']); ?></h1>
+
+        <!-- Menampilkan email pengguna -->
+        <p>Email: <?= htmlspecialchars($user['email']); ?></p>
+
+        <!-- Link untuk kembali ke halaman daftar pengguna -->
+        <a href="index.php" class="btn">Kembali ke Daftar</a>
     </div>
 </body>
-
 </html>
