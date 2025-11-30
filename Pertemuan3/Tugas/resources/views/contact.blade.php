@@ -1,7 +1,7 @@
 <x-layout>
     {{-- Cara memanggil slot $title yang telah dibuat --}}
     <x-slot:title>
-        Home
+        Contact
     </x-slot:title>
-    <h1>Halaman Home<h1>
+    <h1>Halaman Contact<h1>
 </x-layout>
