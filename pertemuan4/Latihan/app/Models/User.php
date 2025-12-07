@@ -15,7 +15,6 @@ class User extends Authenticatable
 
     protected $fillable = [
         'name',
-        'usernme',
         'email',
         'password',
     ];
@@ -34,13 +33,8 @@ class User extends Authenticatable
         ];
     }
 
-    // public function posts(): HasMany
-    // {
-    //     return $this->hasMany(Post::class, 'user_id');
-    // }
-
-    public function posts()
+    public function posts(): HasMany
     {
-        return $this->hasMany(Post::class);
+        return $this->hasMany(Post::class, 'user_id');
     }
 }
